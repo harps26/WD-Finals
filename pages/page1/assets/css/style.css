@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; /* Sets base font size */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.header {
+    background-color: #000;
+    padding: 15px 0;
+    text-align: right;
+}
+
+nav-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 25px;
+}
+nav-links a:hover {
+    color: #fff;
+}
+
+.contact {
+    background-color: #8a2be2;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 20px;
+}
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav-links {
+      text-align: center; /* Center align links on smaller screens */
+    }
+  
+    nav-links a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+
+/* About section styles */
+.about {
+    background-color: var(--second-bg-color); /* Ensure var(--second-bg-color) is defined */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 20px; /* Adjust padding for better spacing */
+    text-align: center;
+}
+
+.ab-img img {
+    max-width: 100%; /* Ensure image stays within container */
+    height: auto;
+    margin-top: -20px; /* Adjust margin for better alignment */
+    margin-bottom: -20px; /* Adjust margin for better alignment */
+}
+
+.ab h2 {
+    font-size: 3.6rem; /* Adjust font size for smaller screens */
+    margin-top: 2rem; /* Adjust margin for better spacing */
+}
+
+.ab h3 {
+    font-size: 2.4rem; /* Adjust font size for smaller screens */
+    margin-bottom: 2rem; /* Adjust margin for better spacing */
+}
+
+.ab p {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+.ab .button {
+    margin-top: 2rem; /* Adjust margin for better spacing */
+}
+
