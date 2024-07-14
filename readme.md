@@ -6,14 +6,14 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/yien26.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Portfolio</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  A Portfolio showcasing my works
 </div>
 
 <br />
@@ -57,20 +57,28 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Project Description:
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+What is the project?
+- It's a portfolio website designed to showcase personal or professional work, skills, and achievements.
+
+What's the purpose?
+- The main purpose is to create an online presence that highlights accomplishments and capabilities, serving as a digital resume or portfolio.
+
+
+What are key components?
+
+- MultiPage Website: Structured into multiple pages, each dedicated to showcasing different aspects (e.g., projects, skills).
+
+What technology is used and how is it used?
+- HTML: Defines the structure of each page, including headers, paragraphs, images, etc.
+- CSS: Styles elements such as fonts, colors, layout, and responsive design to ensure the website looks professional and is easy to navigate.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -117,4 +125,5 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Pinterest | Used as reference | pinterest.com |
+| W3Schools | Used as reference | www.w3schools.com |
