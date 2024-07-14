@@ -74,11 +74,35 @@ What technology is used and how is it used?
 - HTML: Defines the structure of each page, including headers, paragraphs, images, etc.
 - CSS: Styles elements such as fonts, colors, layout, and responsive design to ensure the website looks professional and is easy to navigate.
 
-### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website
+### File Structure Explanation:
 
+- index.html: Main landing page of the website.
+- style.css: Directory containing CSS files for styling.
+- img: For storing project images and icons.
+
+### Deployment Instructions:
+
+- Go to my repository: https://github.com/yien26/WD-FinalProject-Cordero
+Go to actions and select the deploy link.
+
+- Or click this instead: https://yien26.github.io/WD-FinalProject-Cordero/
+
+### Project repositories:
+Note: This can also be viewed in the portfolio website
+
+Seatwork 2: [https://yien26.github.io/WD-Seatwork-2-Cordero-main/index.html"]
+
+Headers&Footers: [https://yien26.github.io/WD-Seatwork3-Cordero/index.html]
+
+Feature Page: [https://yien26.github.io/WD-Seatwork4-Cordero/index.html]
+
+Hands On 1: [https://yien26.github.io/WD-Cordero---Hands-On/]
+
+Hero Gallery: [https://yien26.github.io/WD-Cordero-HandsOn2/index.html]
+
+### WakaTime Integration:
+
+View my coding stats on WakaTime: [\[My Profile Link\]](https://wakatime.com/@Yien)
 
 ### Technology
 <!-- TODO: List of Technology Used -->
