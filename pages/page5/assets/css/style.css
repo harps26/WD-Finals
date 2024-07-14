@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #001005;
+    --text-color: white;
+    --main-color: #00ff51;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 12%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+.logo {
+    font-size: 4rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar a {
+    font-size: 2.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.projects{
+    background: var(--second-bg-color);
+}
+
+
+.projects h2{
+    margin-bottom: 5rem;
+    font-size: 6rem;
+    margin-top: 50px;
+}
+
+
+.projcon {
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.projcon .projbox {
+    text-align: center;
+    border-radius: 2rem;
+    padding: 3rem 2rem 4rem;
+    border: 1rem solid var(--second-bg-color);
+    flex: 1 1 30rem;
+    transition: .5s ease; 
+}
+
+
+.projcon .projbox .button:hover{
+   background: var(--bg-color);
+}
+
+
+.projcon .projbox a:hover{
+    color:var(--main-color)
+}
+
+
+.projbox i{
+    color: var(--main-color);
+    font-size: 10rem;
+}
+
+
+.projbox a{
+    font-size: 10px;
+}
+
+
+.projbox h3{
+    font-size: 3rem;
+    margin-bottom: 20px;;
+}
+
+
+.projcon .projbox:hover{
+    border-color: var(--bg-color);
+    transform: scale(1.05);
+}
+
+
+
+

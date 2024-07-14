@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #0e0010;
+  --text-color: white;
+  --main-color: rgb(190, 52, 224);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 4rem 12%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.menu-icon {
+  font-size: 3.6rem;
+  color: var(--main-color);
+  display: none;
+}
+
+.logo {
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+span {
+  color: var(--main-color);
+}
+
+.navbar .active {
+  color: var(--main-color);
+}
+
+.navbar a {
+  font-size: 2.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid var(--main-color);
+  color: var(--main-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 12%;
+  background-color: var(--second-bg-color);
+}
+
+
+body {
+  --space: 2rem;
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--space);
+  font-size: 30px;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.marquee {
+  margin-top: 10rem;
+  --duration: 60s;
+  --gap: var(--space);
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  transform: skewY(-3deg);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(
+    75deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 0%, 100%) 11%,
+    hsl(0, 0%, 100%) 22%,
+    hsl(0, 0%, 100%) 33%,
+    hsl(0, 0%, 100%) 44%,
+    hsl(0, 0%, 100%) 56%,
+    hsl(0, 0%, 100%) 67%,
+    hsl(0, 0%, 100%) 78%,
+    hsl(0, 0%, 100%) 89%,
+    hsl(0, 0%, 100%) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marquee--borders {
+  border-block: 3px solid var(--main-color);
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+

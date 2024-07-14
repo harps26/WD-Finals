@@ -5,28 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <section class="header">
-        <nav-links>
-            <a href="#">Home</a>
-            <a href="./pages/page1/index.html">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Credits</a>
-            <a href="#" class="contact">Contact Me</a>
-        </nav-links>
-    </section>
+    <header class="header">
+        <a href="" class="logo">Yasmien <span>Cordero</span></a>
 
-    <section class="home">
-        <div class="content">
-          <h1>Hello! I'm</h1>
-          <h1 class="name">Yasmien</h1>
-          <h3>A first year student at FEU Institute of Technology and currently taking Bachelor of Science in Information Technology with a specialization in Cybersecurity. As a passionate and aspiring IT professional, I am eager to delve into the dynamic and ever-evolving world of technology.</h3>
+    <i class="bx bx-meni" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="./pages/page1/index.html">About</a>
+        <a href="./pages/page2/index.html">Projects</a>
+        <a href="./pages/page3/index.html">Credits</a>
+        <a href="./pages/page4/index.html">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hello! I'm <span>Yasmien</span></h1>
+        <h3>A <span>Cybersecurity Student</span></h3>
+        <p>A freshie student of FEU Institute of Technology under the major of Bachelor of Science in Information Technology specializing in Cybersecuity. A passionate aspiring IT professional, with a heart.</p>
+        <div class="btn-group">
+            <a href="" class="btn">Check my CV</a>
         </div>
-        <div class="image-container">
-          <!-- Your image goes here -->
-          <img src="path/to/your/image.jpg" alt="Description of the image">
+
         </div>
-      </section>
+        <div class="home-img">
+            <img src="./assets/img/home.jpg" alt="">
+        </div>
+</section>
+
+<footer class="footer" >
+    <div class="ftext">
+        <div class="fsoc">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+        </div>
+        <h1>Built with love, <span>caffeine,</span> and a sprinkle of code magic</h1>
+        <p>The content provided is intended for educational purposes only.</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
